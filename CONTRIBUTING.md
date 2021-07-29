@@ -1,6 +1,6 @@
 Obrigado pelo interesse em contribuir com o Trybe Notes!
 
-Para baixar o projeto, faça um clone e rode `yarn` ou `npm install`.
+Para baixar o projeto, faça um Fork, depois um Clone e baixe no seu PC.
 
 Crie uma branch para propor mudanças, faça push e crie o Pull Request.
 

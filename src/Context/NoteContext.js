@@ -6,6 +6,7 @@ const NoteContext = createContext();
 export function NoteProvider({ children }) {
   const [note, setNote] = useState({});
   const [hasNote, setHasNote] = useState(false);
+  const [deleted, setDeleted] = useState(0);
 
   useEffect(() => {
     const updatedInterval = setInterval(() => {
@@ -47,6 +48,7 @@ export function NoteProvider({ children }) {
   };
 
   const deleteNote = (id) => {
+    setDeleted(id);
     const newStorageNotes = getLocalStorageNotes().filter(function (n) {
       return n.id !== id;
     });
